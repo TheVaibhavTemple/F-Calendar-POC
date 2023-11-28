@@ -50,6 +50,13 @@
       start: "2023-11-28T03:00:00",
       end: "2023-11-28T04:00:00",
       resourceId: 'd',
+  },
+  {
+    id: 'r',
+    title: 'Mr. Ramraj',
+    start: "2023-11-28T03:00:00",
+    end: "2023-11-28T04:00:00",
+    resourceId: 'd',
   }
       ];
 

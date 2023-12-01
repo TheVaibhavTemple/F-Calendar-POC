@@ -15,8 +15,123 @@
 </head>
 
 <body>
-    <div class="container">
-     <div id="calendar"></div>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><h3>HMS Softwares &nbsp;&nbsp;&nbsp;</h3></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home
+                      <span class="visually-hidden">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-sm-2" type="search" placeholder="Search">
+                  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div id="calendar"></div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-4">
+                <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Doctor Registration</div>
+                    <div class="card-body">
+                      <h4 class="card-title">Success card title</h4>
+                      <p class="card-text">Register in office hour only.</p>
+                      <div>
+                        <div class="form-group">
+                            <label for="drId">Doctor Id</label>
+                            <input type="text" class="form-control" id="drId"
+                                placeholder="Enter Id">
+                        </div>
+                        <div class="form-group">
+                            <label for="drName">Doctor Name</label>
+                            <input type="text" class="form-control" id="drName"
+                                placeholder="Enter Name">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitDr">Submit</button>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-8">
+                <div id="drDetails"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-5">
+            <div class="col-4">
+                <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Paitent Registration</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Success card title</h4>
+                        <p class="card-text">Register in office hour only.</p>
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" class="form-control" id="title" placeholder="Enter Title">
+                            </div>
+                            <div class="form-group">
+                                <label for="start">Appointment Start</label>
+                                <input type="datetime-local" class="form-control" id="start" placeholder="start">
+                            </div>
+                            <div class="form-group">
+                                <label for="end">Appointment end</label>
+                                <input type="datetime-local" class="form-control" id="end" placeholder="end">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="doctor">Choose a Doctor</label>
+        
+                                <select name="doctor" class="form-control" id="doctor">
+                                    <!-- <option value="a">Doctor A</option> -->
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="patientData"></div>
+            </div>
+        </div>
+        <hr>
     </div>
 
 
@@ -32,7 +147,8 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src='lib/fullcalendar-scheduler-6.1.9-premium/fullcalendar-scheduler-6.1.9-premium/dist/index.global.js'></script>
+    <script
+        src='lib/fullcalendar-scheduler-6.1.9-premium/fullcalendar-scheduler-6.1.9-premium/dist/index.global.js'></script>
     <script src="js/script.js"></script>
 </body>
 

@@ -126,7 +126,7 @@
 //   }
 // ]; 
  
- 
+ //optimized
 
 
 // var events = [
